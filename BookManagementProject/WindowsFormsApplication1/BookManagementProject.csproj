@@ -74,9 +74,9 @@
     <Compile Include="Book.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="BookClass\BookManagement.cs" />
     <Compile Include="BookClass\BookView.cs" />
     <Compile Include="BookClass\LogicLayer.cs" />
-    <Compile Include="BookClass\BookManagement.cs" />
     <Compile Include="BookForm\CreateBook.cs">
       <SubType>Form</SubType>
     </Compile>

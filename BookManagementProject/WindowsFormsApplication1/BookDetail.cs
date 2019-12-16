@@ -16,9 +16,15 @@ namespace WindowsFormsApplication1
         private double rate = 0;
         public BookDetail()
         {
-            InitializeComponent();
-            this.button1.Click += button1_Click;
+            InitializeComponent();            
+            this.pictureBox1.Click += pictureBox1_Click;
             this.button2.Click += button2_Click;
+            this.textBox1.Text = count.ToString(); 
+        }
+
+        void pictureBox1_Click(object sender, EventArgs e)
+        {
+            count++;
             this.textBox1.Text = count.ToString(); 
         }
    
@@ -44,11 +50,6 @@ namespace WindowsFormsApplication1
                     this.textBox3.Text = result.ToString();
                 }              
             }           
-        }
-        void button1_Click(object sender, EventArgs e)
-        {
-            count++;
-            this.textBox1.Text = count.ToString(); // xong view nhé 
-        }
+        }       
     }
 }

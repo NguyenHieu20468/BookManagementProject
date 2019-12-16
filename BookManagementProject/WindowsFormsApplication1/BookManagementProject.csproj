@@ -68,10 +68,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.cs">
+    <Compile Include="BookForm\Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
+    <Compile Include="BookForm\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Author.cs">
@@ -80,35 +80,37 @@
     <Compile Include="Book.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="BookManagement.cs" />
-    <Compile Include="CreateBook.cs">
+    <Compile Include="BookClass\BookView.cs" />
+    <Compile Include="BookClass\LogicLayer.cs" />
+    <Compile Include="BookClass\BookManagement.cs" />
+    <Compile Include="BookForm\CreateBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateBook.Designer.cs">
+    <Compile Include="BookForm\CreateBook.Designer.cs">
       <DependentUpon>CreateBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="DisplayUser.cs">
+    <Compile Include="BookForm\DisplayUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DisplayUser.Designer.cs">
+    <Compile Include="BookForm\DisplayUser.Designer.cs">
       <DependentUpon>DisplayUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListBook.cs">
+    <Compile Include="BookForm\ListBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListBook.Designer.cs">
+    <Compile Include="BookForm\ListBook.Designer.cs">
       <DependentUpon>ListBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListBook2.cs">
+    <Compile Include="BookForm\ListBook2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListBook2.Designer.cs">
+    <Compile Include="BookForm\ListBook2.Designer.cs">
       <DependentUpon>ListBook2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="BookForm\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="BookForm\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
@@ -128,34 +130,34 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BookDetail.cs">
+    <Compile Include="BookForm\BookDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BookDetail.Designer.cs">
+    <Compile Include="BookForm\BookDetail.Designer.cs">
       <DependentUpon>BookDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateBook.cs">
+    <Compile Include="BookForm\UpdateBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateBook.Designer.cs">
+    <Compile Include="BookForm\UpdateBook.Designer.cs">
       <DependentUpon>UpdateBook.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin.resx">
+    <EmbeddedResource Include="BookForm\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreateBook.resx">
+    <EmbeddedResource Include="BookForm\CreateBook.resx">
       <DependentUpon>CreateBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DisplayUser.resx">
+    <EmbeddedResource Include="BookForm\DisplayUser.resx">
       <DependentUpon>DisplayUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListBook.resx">
+    <EmbeddedResource Include="BookForm\ListBook.resx">
       <DependentUpon>ListBook.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListBook2.resx">
+    <EmbeddedResource Include="BookForm\ListBook2.resx">
       <DependentUpon>ListBook2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="BookForm\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -167,10 +169,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BookDetail.resx">
+    <EmbeddedResource Include="BookForm\BookDetail.resx">
       <DependentUpon>BookDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateBook.resx">
+    <EmbeddedResource Include="BookForm\UpdateBook.resx">
       <DependentUpon>UpdateBook.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">

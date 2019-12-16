@@ -68,12 +68,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookForm\Admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BookForm\Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Author.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -142,9 +136,6 @@
     <Compile Include="BookForm\UpdateBook.Designer.cs">
       <DependentUpon>UpdateBook.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BookForm\Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BookForm\CreateBook.resx">
       <DependentUpon>CreateBook.cs</DependentUpon>
     </EmbeddedResource>

@@ -77,12 +77,6 @@
     <Compile Include="BookClass\BookManagement.cs" />
     <Compile Include="BookClass\BookView.cs" />
     <Compile Include="BookClass\LogicLayer.cs" />
-    <Compile Include="BookForm\CreateBook.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BookForm\CreateBook.Designer.cs">
-      <DependentUpon>CreateBook.cs</DependentUpon>
-    </Compile>
     <Compile Include="BookForm\DisplayUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +100,12 @@
     </Compile>
     <Compile Include="BookForm\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateBook.Designer.cs">
+      <DependentUpon>CreateBook.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -136,9 +136,6 @@
     <Compile Include="BookForm\UpdateBook.Designer.cs">
       <DependentUpon>UpdateBook.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BookForm\CreateBook.resx">
-      <DependentUpon>CreateBook.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BookForm\DisplayUser.resx">
       <DependentUpon>DisplayUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookForm\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateBook.resx">
+      <DependentUpon>CreateBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

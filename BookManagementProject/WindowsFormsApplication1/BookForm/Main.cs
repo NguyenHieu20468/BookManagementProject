@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
         void linkLabel2_Click(object sender, EventArgs e)
         {           
             //(new ListBook()).Show(); 
-            var f = new ListBook();
+            var f = new DisplayUser();
             f.Show();
             this.Hide(); 
         }

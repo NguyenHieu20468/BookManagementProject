@@ -46,7 +46,7 @@ namespace WindowsFormsApplication1
             db.Entry(bk).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
         }
-        public void DeleteStudent(int id)
+        public void DeleteBook(int id)
         {
             var db = new BookDatabaseEntities();
             var bk = db.Books.Find(id);

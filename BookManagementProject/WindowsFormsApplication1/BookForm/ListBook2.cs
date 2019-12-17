@@ -26,6 +26,13 @@ namespace WindowsFormsApplication1
            var result = this.control.searchingName(target);
            this.dataGridView1.DataSource = result;
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var f = new ListBook();
+            f.Show();
+            this.Hide(); 
+        }
        
     }
 }

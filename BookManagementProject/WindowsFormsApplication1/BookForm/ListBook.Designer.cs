@@ -42,10 +42,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.btnNew = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.grdBooks = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdBooks)).BeginInit();
             this.SuspendLayout();
             // 
             // label12
@@ -206,12 +215,65 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "Hola, Library";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.grdBooks);
+            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Location = new System.Drawing.Point(194, 187);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1079, 378);
+            this.panel1.TabIndex = 52;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnNew,
+            this.btnEdit,
+            this.btnDelete});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1079, 28);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // btnNew
+            // 
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(51, 24);
+            this.btnNew.Text = "New";
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(47, 24);
+            this.btnEdit.Text = "Edit";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(65, 24);
+            this.btnDelete.Text = "Delete";
+            // 
+            // grdBooks
+            // 
+            this.grdBooks.AllowUserToAddRows = false;
+            this.grdBooks.AllowUserToDeleteRows = false;
+            this.grdBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdBooks.Location = new System.Drawing.Point(4, 32);
+            this.grdBooks.Name = "grdBooks";
+            this.grdBooks.ReadOnly = true;
+            this.grdBooks.RowTemplate.Height = 24;
+            this.grdBooks.Size = new System.Drawing.Size(1072, 354);
+            this.grdBooks.TabIndex = 1;
+            // 
             // ListBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1347, 634);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.pictureBox4);
@@ -232,6 +294,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grdBooks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,5 +319,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView grdBooks;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem btnNew;
+        private System.Windows.Forms.ToolStripMenuItem btnEdit;
+        private System.Windows.Forms.ToolStripMenuItem btnDelete;
     }
 }

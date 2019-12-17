@@ -6,21 +6,22 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApplication1
 {
-    class BookView
-    {
-        public int Id { get; set; }
+    class BookView{
+        public int ID { get; set; }
         public string Code { get; set; }
         public string Name { get; set; }
         public string AuthorCode { get; set; }
         public string Topic { get; set; }
 
-        public BookView(Book bk)
+        public BookView(Book book)
         {
-            this.Id = bk.ID;
-            this.Code = bk.BookCode;
-            this.Name = bk.BookName;
-            this.AuthorCode = bk.AuthorCode;
-            this.Topic = bk.Topic;
+            this.ID = book.ID;
+            this.Code = book.BookCode;
+            this.Name = book.BookName;
+            this.AuthorCode = book.AuthorCode;
+            this.Topic = book.Topic;
         }
+
+
     }
 }

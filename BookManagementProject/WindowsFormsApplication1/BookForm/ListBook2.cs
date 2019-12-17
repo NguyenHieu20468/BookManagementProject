@@ -26,5 +26,6 @@ namespace WindowsFormsApplication1
            var result = this.control.searchingName(target);
            this.dataGridView1.DataSource = result;
         }
+       
     }
 }
